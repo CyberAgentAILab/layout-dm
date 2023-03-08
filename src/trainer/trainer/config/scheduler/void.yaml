@@ -1,0 +1,2 @@
+_target_: trainer.helpers.scheduler.VoidScheduler
+_partial_: true

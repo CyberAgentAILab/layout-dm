@@ -1,0 +1,4 @@
+_target_: trainer.datasets.rico.Rico25Dataset
+_partial_: true
+dir: ???
+max_seq_length: 25

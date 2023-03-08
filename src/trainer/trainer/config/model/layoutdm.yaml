@@ -1,0 +1,2 @@
+_target_: trainer.models.layoutdm.LayoutDM
+_partial_: true

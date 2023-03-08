@@ -1,0 +1,7 @@
+# @package _global_
+defaults:
+  - override /model: elem_wise_autoreg
+
+data:
+  special_tokens: [pad, bos, eos]
+  var_order: c-w-h-x-y

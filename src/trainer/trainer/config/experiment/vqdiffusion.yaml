@@ -1,0 +1,19 @@
+# @package _global_
+defaults:
+  - override /model: layoutdm
+  - override /scheduler: reduce_lr_on_plateau
+
+data:
+  pad_until_max: true
+  shared_bbox_vocab: x-y-w-h
+  bbox_quantization: linear
+optimizer:
+  lr: 5.0e-4
+backbone:
+  encoder_layer:
+    timestep_type: adalayernorm
+    diffusion_step: 100
+    dropout: 0.0
+model:
+  q_type: vanilla
+  pos_emb: default

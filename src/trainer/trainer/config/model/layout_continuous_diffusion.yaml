@@ -1,0 +1,2 @@
+_target_: trainer.models.layout_continuous_diffusion.LayoutContinuousDiffusion
+_partial_: true

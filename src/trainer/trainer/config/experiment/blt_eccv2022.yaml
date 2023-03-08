@@ -1,0 +1,7 @@
+# @package _global_
+defaults:
+  - override /model: blt
+
+# Note: authors performed HP search (details in supplementary), but not sure on other hyper parameters
+# lr: [1e-3, 3e-3, 5e-3]
+# dropout: [0.1, 0.3]

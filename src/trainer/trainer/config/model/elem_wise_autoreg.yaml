@@ -1,0 +1,2 @@
+_target_: trainer.models.elem_wise_autoreg.ElemWiseAutoreg
+_partial_: true

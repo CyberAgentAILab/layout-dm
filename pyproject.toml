@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "trainer"
+version = "0.1.0"
+description = ""
+authors = ["Dummy User <dummy_user@gmail.com>"]
+packages = [
+    { include = "trainer", from = "src/trainer", format="sdist" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7.1,<3.8"
+Pillow = "^9.1.0"
+google-cloud-storage = "^2.2.1"
+torch = [
+  {url = "https://download.pytorch.org/whl/cu113/torch-1.10.2%2Bcu113-cp37-cp37m-linux_x86_64.whl", platform = "linux"}
+]
+tensorflow = "^2.8.0"
+hydra-core = "^1.1.2"
+einops = "^0.4.1"
+tqdm = "^4.64.0"
+torchvision = {url = "https://download.pytorch.org/whl/cu113/torchvision-0.11.3%2Bcu113-cp37-cp37m-linux_x86_64.whl", platform = "linux"}
+torch-scatter = {url = "https://data.pyg.org/whl/torch-1.10.0%2Bcu113/torch_scatter-2.0.9-cp37-cp37m-linux_x86_64.whl", platform = "linux"}
+torch-sparse = {url = "https://data.pyg.org/whl/torch-1.10.0%2Bcu113/torch_sparse-0.6.13-cp37-cp37m-linux_x86_64.whl", platform = "linux"}
+pandas = "1.3.5"
+torch-geometric = "^2.0.4"
+seaborn = "^0.11.2"
+ipython = "<7.32.0"
+ipykernel = "^6.13.0"
+torch-tb-profiler = "^0.4.0"
+setuptools = "59.5.0"
+pytorch-fid = "^0.2.1"
+Cython = "^0.29.30"
+pycocotools = "^2.0.4"
+prdc = "^0.2"
+scikit-learn = "1.0.2"
+numpy = "1.21.6"
+matplotlib = "3.5.2"
+fsspec = "2023.1.0"
+gcsfs = "2023.1.0"
+scipy = ">=1.4,<1.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+pysen = {extras = ["lint"], version = "^0.10.1"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pysen]
+version = "0.10"
+
+[tool.pysen.lint]
+enable_black = true
+enable_flake8 = true
+enable_isort = true
+enable_mypy = true
+mypy_preset = "strict"
+line_length = 88
+py_version = "py37"
+
+[[tool.pysen.lint.mypy_targets]]
+  paths = [".", "src/preprocess/preprocess", "src/trainer/trainer"]

@@ -1,0 +1,4 @@
+_target_: trainer.datasets.publaynet.PubLayNetDataset
+_partial_: true
+dir: ???
+max_seq_length: 25

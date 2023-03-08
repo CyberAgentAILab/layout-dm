@@ -1,0 +1,7 @@
+# @package _global_
+defaults:
+  - override /model: ruite
+
+data:
+  special_tokens: [pad, ]
+  transforms: ["RandomOrder", "AddNoiseToBBox(std=0.1)"]

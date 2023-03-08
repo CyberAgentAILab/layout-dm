@@ -1,0 +1,20 @@
+defaults:
+  - backbone: medium
+  - dataset: rico25
+  - data: default
+  - model: elem_wise_autoreg
+  - optimizer: adamw
+  - sampling: random
+  - scheduler: void
+  - training: default
+  # https://hydra.cc/docs/upgrades/1.0_to_1.1/default_composition_order/
+  - _self_
+
+job_dir: ???
+fid_weight_dir: ???
+seed: ???
+device: cuda
+debug: false
+hydra:
+  run:
+    dir: .

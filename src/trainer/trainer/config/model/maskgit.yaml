@@ -1,0 +1,2 @@
+_target_: trainer.models.maskgit.MaskGIT
+_partial_: true

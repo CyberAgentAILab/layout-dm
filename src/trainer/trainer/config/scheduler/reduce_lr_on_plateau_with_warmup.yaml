@@ -1,0 +1,8 @@
+_target_: trainer.helpers.scheduler.ReduceLROnPlateauWithWarmup
+_partial_: true
+mode: min
+factor: 0.5
+patience: 2
+threshold: 1e-2
+warmup_lr: 5.0e-4
+warmup: 5

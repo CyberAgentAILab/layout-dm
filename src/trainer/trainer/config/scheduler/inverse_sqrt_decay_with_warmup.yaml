@@ -1,0 +1,2 @@
+_target_: trainer.helpers.scheduler.D3PMScheduler
+_partial_: true

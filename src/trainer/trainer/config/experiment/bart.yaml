@@ -1,0 +1,8 @@
+# @package _global_
+defaults:
+  - override /model: bart
+
+data:
+  pad_until_max: true
+  special_tokens: [pad, bos, eos, mask]
+  var_order: c-w-h-x-y
