@@ -15,10 +15,10 @@ Pytorch-geometry provides independent pre-build wheel for a *combination* of PyT
 
 
 ### How to install
-1. Install poetry. We recommend to make a virtualenv and install poetry inside it.)
+1. Install poetry (see [official docs](https://python-poetry.org/docs/)). We recommend to make a virtualenv and install poetry inside it.
 
 ```bash
-pip3 install poetry
+curl -sSL https://install.python-poetry.org | python3 -
 ```
 
 2. Install dependencies (it may be slow..)
@@ -30,7 +30,7 @@ poetry install
 3. Download resources and unzip
 
 ``` bash
-wget https://storage.googleapis.com/ailab-public/layoutdm/layoutdm_starter.zip
+wget https://github.com/CyberAgentAILab/layout-dm/releases/download/v1.0.0/layoutdm_starter.zip
 unzip layoutdm_starter.zip
 ```
 
@@ -48,7 +48,7 @@ download
 Note: our main framework is based on [hydra](https://hydra.cc/). It is convenient to handle dozens of arguments hierarchically but may require some additional efforts if one is new to hydra.
 
 ### Demo
-We provide the trained models [here](download/pretrained_weights). Please run a jupyter notebook in [notebooks/demo.ipynb](notebooks/demo.ipynb). You can get and render the results of six layout generation tasks on two datasets (Rico and PubLayNet).
+Please run a jupyter notebook in [notebooks/demo.ipynb](notebooks/demo.ipynb). You can get and render the results of six layout generation tasks on two datasets (Rico and PubLayNet).
 
 ### Training
 You can also train your own model from scratch, for example by
