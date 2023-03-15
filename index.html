@@ -16,11 +16,11 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://naoto0804.github.io/layoutdm/"/>
     <meta property="og:title" content="LayoutDM: Discrete Diffusion Model <br> for Controllable Layout Generation" />
-    <meta property="og:description" content="Controllable layout generation aims at synthesizing plausible arrangement of element bounding boxes with optional constraints, such as type or position of a specific element. In this work, we try to solve a broad range of layout generation tasks in a single model that is based on discrete state-space diffusion models. Our model, named \emph{LayoutDM}, naturally handles the structured layout data in the discrete representation and learns to progressively infer a noiseless layout from the initial input, where we model the layout corruption process by modality-wise discrete diffusion. For conditional generation, we propose to inject layout constraints in the form of masking or logit adjustment during inference. We show in the experiments that our LayoutDM successfully generates high-quality layouts and outperforms both task-specific and task-agnostic baselines on several layout tasks." />
+    <meta property="og:description" content="Controllable layout generation aims at synthesizing plausible arrangement of element bounding boxes with optional constraints, such as type or position of a specific element. In this work, we try to solve a broad range of layout generation tasks in a single model that is based on discrete state-space diffusion models. Our model, named LayoutDM}, naturally handles the structured layout data in the discrete representation and learns to progressively infer a noiseless layout from the initial input, where we model the layout corruption process by modality-wise discrete diffusion. For conditional generation, we propose to inject layout constraints in the form of masking or logit adjustment during inference. We show in the experiments that our LayoutDM successfully generates high-quality layouts and outperforms both task-specific and task-agnostic baselines on several layout tasks." />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="LayoutDM: Discrete Diffusion Model <br> for Controllable Layout Generation" />
-    <meta name="twitter:description" content="Controllable layout generation aims at synthesizing plausible arrangement of element bounding boxes with optional constraints, such as type or position of a specific element. In this work, we try to solve a broad range of layout generation tasks in a single model that is based on discrete state-space diffusion models. Our model, named \emph{LayoutDM}, naturally handles the structured layout data in the discrete representation and learns to progressively infer a noiseless layout from the initial input, where we model the layout corruption process by modality-wise discrete diffusion. For conditional generation, we propose to inject layout constraints in the form of masking or logit adjustment during inference. We show in the experiments that our LayoutDM successfully generates high-quality layouts and outperforms both task-specific and task-agnostic baselines on several layout tasks." />
+    <meta name="twitter:description" content="Controllable layout generation aims at synthesizing plausible arrangement of element bounding boxes with optional constraints, such as type or position of a specific element. In this work, we try to solve a broad range of layout generation tasks in a single model that is based on discrete state-space diffusion models. Our model, named LayoutDM, naturally handles the structured layout data in the discrete representation and learns to progressively infer a noiseless layout from the initial input, where we model the layout corruption process by modality-wise discrete diffusion. For conditional generation, we propose to inject layout constraints in the form of masking or logit adjustment during inference. We show in the experiments that our LayoutDM successfully generates high-quality layouts and outperforms both task-specific and task-agnostic baselines on several layout tasks." />
     <meta name="twitter:image" content="https://naoto0804.github.io/layoutdm/teaser.png" />
 
     <script>
@@ -79,13 +79,13 @@
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <a href="">
+                            <a href="https://arxiv.org/abs/2303.08137">
                             <image src="icon/description.svg" height="60px">
                                 <h4><strong>Paper</strong></h4>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/CyberAgentAILab/LayoutDM">
+                            <a href="https://github.com/CyberAgentAILab/layout-dm">
                             <image src="icon/github.png" height="60px">
                                 <h4><strong>Code</strong></h4>
                             </a>
@@ -104,11 +104,11 @@
                     <p class="text-center">
                         <img src="teaser.png" class="img-rounded" height="360px">
                     </p>
-                    <!-- <p class="text-center">
+                    <p class="text-center">
                         <strong>Top</strong>: LayoutDM is trained to gradually generate a complete layout from a blank state in discrete state space. <br>
                         <strong>Bottom</strong>: During sampling, we can steer LayoutDM to perform various conditional generation tasks <br>
                         without additional training or external models.
-                    </p> -->
+                    </p>
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
                 <p class="text-justify">
                     Controllable layout generation aims at synthesizing plausible arrangement of element bounding boxes with optional constraints, such as type or position of a specific element.
 In this work, we try to solve a broad range of layout generation tasks in a single model that is based on discrete state-space diffusion models.
-Our model, named \emph{LayoutDM}, naturally handles the structured layout data in the discrete representation and learns to progressively infer a noiseless layout from the initial input, where we model the layout corruption process by modality-wise discrete diffusion.
+Our model, named LayoutDM, naturally handles the structured layout data in the discrete representation and learns to progressively infer a noiseless layout from the initial input, where we model the layout corruption process by modality-wise discrete diffusion.
 For conditional generation, we propose to inject layout constraints in the form of masking or logit adjustment during inference.
 We show in the experiments that our LayoutDM successfully generates high-quality layouts and outperforms both task-specific and task-agnostic baselines on several layout tasks.
 
