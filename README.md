@@ -1,4 +1,6 @@
 # LayoutDM: Discrete Diffusion Model for Controllable Layout Generation (CVPR2023)
+This repository is an official implementation of the paper titled above.
+Please refer to [project page](https://cyberagentailab.github.io/layout-dm/) or [paper](https://arxiv.org/abs/2303.08137) for more details.
 
 ## Setup
 Here we describe the setup required for the model training and evaluation.
