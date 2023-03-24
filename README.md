@@ -68,7 +68,8 @@ Note that for training/testing, style of the arguments is `key=value` because we
 poetry run python3 -m src.trainer.trainer.test \
     cond=<COND> \
     job_dir=<JOB_DIR> \
-    result_dir=<RESULT_DIR>
+    result_dir=<RESULT_DIR> \
+    <ADDITIONAL_ARGS>
 ```
 `<COND>` can be: (unconditional, c, cwh, partial, refinement, relation)
 
@@ -78,6 +79,9 @@ poetry run python3 -m src.trainer.trainer.test cond=c dataset_dir=./download/dat
 ```
 
 Please refer to [TestConfig](src/trainer/trainer/hydra_configs.py#L12) for more options available.
+Below are some popular options for <ADDITIONAL_ARGS>
+- `is_validation=true`: used to evaluate the generation performance on validation set instead of test set. This must be used when tuning the hyper-parameters.
+- `sampling=top_p top_p=<TOP_P>`: use top-p sampling with p=<TOP_P>　instead of default sampling.
 
 ### Evaluation
 ```bash
