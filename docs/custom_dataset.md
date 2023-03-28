@@ -1,10 +1,12 @@
 # Training on custom dataset
 
+Note: Please run all the scripts at the root of this project to make sure to invoke `poetry` command.
+
 ### 1. Make a config file for the dataset
 
-Make a yaml file describing the dataset and put it under `src/trainer/trainer/config/dataset/`.
+Make a yaml file describing the dataset and put it under [this directory](../src/trainer/trainer/config/dataset/).
 This yaml is parsed and used as the input for [hydra.utils.instantiate](https://hydra.cc/docs/advanced/instantiate_objects/overview/) to initialize the dataset class.
-For example, the config for Rico dataset ([rico25.yaml](src/trainer/trainer/config/dataset/rico25.yaml)) is currently as follows:
+For example, the config for Rico dataset ([rico25.yaml](../src/trainer/trainer/config/dataset/rico25.yaml)) is currently as follows:
 
 ```yaml
 _target_: trainer.datasets.rico.Rico25Dataset
@@ -15,7 +17,7 @@ max_seq_length: 25
 
 ### 2. Implement a dataset class
 
-Implement a dataset class that is defined above. It should inherit `BaseDataset` in [src/trainer/trainer/base.py](./src/trainer/trainer/base.py) and override [`preprocess`](src/trainer/trainer/base.py#L67) function to conduct dataset-specific preprocessing and train-val-test split. For example, please refer to `Rico25Dataset` in [src/trainer/trainer/rico.py](src/trainer/trainer/rico.py).
+Implement a dataset class that is defined above. It should inherit `BaseDataset` in [base.py](../src/trainer/trainer/datasets/base.py) and override `preprocess` function to conduct dataset-specific preprocessing and train-val-test split. For example, please refer to `Rico25Dataset` in [rico.py](../src/trainer/trainer/datasets/rico.py).
 
 Modify `DATASET_DIR` in [global_config.py](../src/trainer/trainer/global_configs.py), so that your dataset is used.
 `DATASET_DIR` should have the following structure.
