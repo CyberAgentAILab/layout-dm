@@ -42,7 +42,7 @@ After the training, modify `FID_WEIGHT_DIR` in [global_config.py](../src/trainer
 ### (4. Clustering coordinates of layouts)
 If one wants to apply adaptive quantization for position and size tokens, please first conduct clustering.
 ```bash
-poetry run python3 preprocess/clustering_coordinates.py <DATASET_YAML_PATH> <ALGORITHM> --result_dir <KMEANS_WEIGHT_ROOT>
+poetry run python3 bin/clustering_coordinates.py <DATASET_YAML_PATH> <ALGORITHM> --result_dir <KMEANS_WEIGHT_ROOT>
 ```
 
 After the clustering, modify `KMEANS_WEIGHT_ROOT` in [global_config.py](../src/trainer/trainer/global_configs.py), so that the cluster centroids are loaded later.
