@@ -102,7 +102,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="row">
                     <p class="text-center">
-                        <img src="teaser.png" class="img-rounded" height="360px">
+                        <img src="./images/teaser.png" class="img-rounded" height="360px">
                     </p>
                     <p class="text-center">
                         <strong>Top</strong>: LayoutDM is trained to gradually generate a complete layout from a blank state in discrete state space. <br>
@@ -126,6 +126,48 @@ Our model, named LayoutDM, naturally handles the structured layout data in the d
 For conditional generation, we propose to inject layout constraints in the form of masking or logit adjustment during inference.
 We show in the experiments that our LayoutDM successfully generates high-quality layouts and outperforms both task-specific and task-agnostic baselines on several layout tasks.
 
+                </p>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Model
+                </h3>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+                <p class="text-justify">
+                    We show some conditional generation results using masking.
+                </p>
+                <div class="row">
+                    <p class="text-center">
+                        <img src="./images/result_inpainting.png" class="img-rounded" height="360px">
+                    </p>
+                </div>
+                <p class="text-justify">
+                    We show some conditional generation results using a combination of masking and logit adjustment.
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="text-center">
+                            <img src="./images/result_refinement.png" class="img-rounded" height="225px">
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="text-center">
+                            <img src="./images/result_relationship.png" class="img-rounded" height="200px">
+                        </p>
+                    </div>
+                </div>
+                <p class="text-justify">
+                    Please refer to the appendix of <a href="https://arxiv.org/abs/2303.08137">our paper</a> for more details.
                 </p>
             </div>
         </div>
@@ -159,22 +201,22 @@ We show in the experiments that our LayoutDM successfully generates high-quality
             </div>
         </div>
 
-        <!-- <h3>Resources</h3>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Concurrent work
+                </h3>
                 <ul>
-                    <li><a href="https://arxiv.org/abs/1803.11365">arXiv</a></li>
-                    <li><a href="https://openaccess.thecvf.com/content_cvpr_2018/html/Inoue_Cross-Domain_Weakly-Supervised_Object_CVPR_2018_paper.html">proceedings</a></li>
-                    <li><a href="https://github.com/naoto0804/cross-domain-detection">code/dataset</a></li>
-                    <li><a href="https://drive.google.com/file/d/1AXhwDfgzgfMD8W2s4y1f8rUSzErsL5yg/view">poster</a></li>
-                    <li><a href="https://drive.google.com/file/d/1v1IJDCJpVBjQhNZY3nSGJcfVX6tFo4ho/view">slide(ja)</a></li>
+                    <li><a href="https://arxiv.org/abs/2303.05049">Unifying Layout Generation with a Decoupled Diffusion Model (CVPR2023)</a></li>
+                    <li><a href=""></a>LayoutDM: Transformer-based Diffusion Model for Layout Generation (CVPR2023)</li>
                 </ul>
             </div>
-        </div> -->
+        </div>
+
     </div>
     <footer class="text-center">
         &#169; Naoto Inoue<br />
-        Last Update: 2023-03-02
+        Last Update: 2023-03-28
     </footer>
 </body>
 
