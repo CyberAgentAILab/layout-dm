@@ -51,3 +51,25 @@ After the clustering, modify `KMEANS_WEIGHT_ROOT` in [global_config.py](../src/t
 ```bash
 bash bin/train.sh rico25 layoutdm
 ```
+
+# Testing on custom dataset
+If you want to feed a hand-made layout to LayoutDM, the quickest way is to instantiate [Data](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.data.Data.html#torch_geometric.data.Data).
+
+```python
+from torch_geometric.data import Data
+
+# [xc, yc, w, h] format in 0~1 normalized coordinates
+bboxes = torch.FloatTensor([
+    [0.4985, 0.0968, 0.4990, 0.0153],
+    [0.4986, 0.5134, 0.8288, 0.0285],
+    [0.4986, 0.2918, 0.8289, 0.3573],
+])
+# see .labels of each dataset class for name-index correspondense
+labels = torch.LongTensor([0, 0, 3])
+assert bboxes.size(0) == labels.size(0) and bboxes.size(1) == 4
+
+# set some optional attributes by a dummy value (False)
+attr = {k: torch.full((1,), fill_value=False) for k in ["filtered", "has_canvas_element", "NoiseAdded"]}
+
+data = Data(x=bboxes, y=labels, attr=attr)  # can be used as an alternative for `dataset[target_index]` in demo.ipynb
+```
