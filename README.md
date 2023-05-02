@@ -46,6 +46,7 @@ download
 ```
 
 ## Experiment
+**Important**: we find some critical errors that cannot be fixed quickly in using multiple GPUs. Please set `CUDA_VISIBLE_DEVICES=<GPU_ID>` to force the model use a single GPU.
 
 Note: our main framework is based on [hydra](https://hydra.cc/). It is convenient to handle dozens of arguments hierarchically but may require some additional efforts if one is new to hydra.
 
