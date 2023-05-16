@@ -95,11 +95,10 @@ If you find this code useful for your research, please cite our paper:
 
 ```
 @inproceedings{inoue2023layout,
-    title={{LayoutDM: Discrete Diffusion Model for Controllable Layout Generation}},
-    author={Naoto Inoue and Kotaro Kikuchi and Edgar Simo-Serra and Mayu Otani and Kota Yamaguchi},
-    booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year={2023},
-    pages={XXXX-XXXX},
-    doi={XXXX}
-  }
+  title={{LayoutDM: Discrete Diffusion Model for Controllable Layout Generation}},
+  author={Naoto Inoue and Kotaro Kikuchi and Edgar Simo-Serra and Mayu Otani and Kota Yamaguchi},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2023},
+  pages={10167-10176},
+}
 ```
