@@ -9,7 +9,7 @@ Here we describe the setup required for the model training and evaluation.
 We check the reproducibility under this environment.
 - Python3.7
 - CUDA 11.3
-- [PyTorch](https://pytorch.org/get-started/locally/) 1.12
+- [PyTorch](https://pytorch.org/get-started/locally/) 1.10
 
 We recommend using Poetry (all settings and dependencies in [pyproject.toml](pyproject.toml)).
 Pytorch-geometry provides independent pre-build wheel for a *combination* of PyTorch and CUDA version (see [PyG:Installation](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html
