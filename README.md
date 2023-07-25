@@ -76,7 +76,7 @@ poetry run python3 -m src.trainer.trainer.test \
 
 For example, if you want to test the provided LayoutDM model on `C->S+P`, the command is as follows:
 ```
-poetry run python3 -m src.trainer.trainer.test cond=c dataset_dir=./download/datasets job_dir=./download/pretrained/layoutdm_rico result_dir=tmp/dummy_results
+poetry run python3 -m src.trainer.trainer.test cond=c job_dir=./download/pretrained/layoutdm_rico result_dir=tmp/dummy_results
 ```
 
 Please refer to [TestConfig](src/trainer/trainer/hydra_configs.py#L12) for more options available.
