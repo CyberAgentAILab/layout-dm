@@ -34,7 +34,7 @@ DATASET_DIR
 Following [LayoutGAN++](https://arxiv.org/abs/2108.00871), we compute FID during and after the training of LayoutDM for validation and testing, respectively. In order to do so, we first train a Transformer-based model that can extract discriminative layout features, which is used to compute the FID. This is done by:
 
 ```bash
-poetry run python3 src/trainer/trainer/fid/train.py <DATASET_YAML_PATH> --out_path <FID_WEIGHT_DIR>
+poetry run python3 src/trainer/trainer/fid/train.py <DATASET_YAML_PATH> --out_dir <FID_WEIGHT_DIR>
 ```
 
 After the training, modify `FID_WEIGHT_DIR` in [global_config.py](../src/trainer/trainer/global_configs.py), so that the trained weights are used for FID computation later.
